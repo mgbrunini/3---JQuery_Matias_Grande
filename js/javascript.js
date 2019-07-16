@@ -77,6 +77,18 @@ $(document).ready(function(){
   });
 
   $("#boton3").click(function(){
-    
+    var Nmayor = 0;
+    var pos = 0;
+    var aux = "";
+    for (var i = 0; i < localStorage.length; i++) {
+      var clave = localStorage.key(i);
+      var registro = $.parseJSON(localStorage.getItem(clave));
+      var num = parseInt(registro.nota);
+      if (num >= Nmayor) {
+        Nmayor = num;
+        aux = registro.nombre;
+      }
+    }
+    alert("La nota mayor pertenece a " + aux + " con " + Nmayor);
   });
 });
