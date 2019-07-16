@@ -10,6 +10,7 @@
     <!-- javascript -->
     <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/javascript.js"></script>
     <title>Registro de estudiantes</title>
   </head>
   <body>
@@ -19,20 +20,20 @@
           <h3>Registro de estudiantes</h3>
           <form class="" action="index.html" method="post">
             Codigo: <br>
-            <input type="text" name="" value=""><br>
+            <input type="text" id="codigo" name="" value=""><br>
             Nombre: <br>
-            <input type="text" name="" value=""><br>
+            <input type="text" id="nombre" name="" value=""><br>
             Nota: <br>
-            <input type="text" name="" value=""><br><br>
+            <input type="text" id="nota" name="" value=""><br><br>
           </form>
-          <button type="button" name="button">Registrar estudiantes</button>
-          <button type="button" name="button">Mostrar promedio</button>
-          <button type="button" name="button">Mostrar nota mayor</button>
-          <button type="button" name="button">Mostrar nota menor</button>
+          <button type="button" name="button" id="boton1">Registrar estudiantes</button>
+          <button type="button" name="button" id="boton2">Mostrar promedio</button>
+          <button type="button" name="button" id="boton3">Mostrar nota mayor</button>
+          <button type="button" name="button" id="boton4">Mostrar nota menor</button>
         </div>
         <div class="col l5 push-l3">
           <h3>Listado de estudiantes</h3>
-          <p></p>
+          <p id="p1"></p>
         </div>
       </div>
     </div>
