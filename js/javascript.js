@@ -60,6 +60,11 @@ $(document).ready(function(){
 
     listar();
     restablecer();
+    function restablecer(){
+      $("#codigo").val("");
+      $("#nombre").val("");
+      $("#nota").val("");
+    };
   });
 
   $("#boton2").click(function(){
@@ -107,5 +112,6 @@ $(document).ready(function(){
     }
     alert("La nota menor es " + Nmenor);
   });
-  
+
+  listar();
 });
