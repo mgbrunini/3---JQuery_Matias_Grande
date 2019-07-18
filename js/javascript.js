@@ -89,6 +89,23 @@ $(document).ready(function(){
         aux = registro.nombre;
       }
     }
-    alert("La nota mayor pertenece a " + aux + " con " + Nmayor);
+    alert("La nota mayor es " + Nmayor);
   });
+
+  $("#boton4").click(function(){
+    var Nmenor = 11;
+    var pos = 0;
+    var aux = "";
+    for (var i = 0; i < localStorage.length; i++) {
+      var clave = localStorage.key(i);
+      var registro = $.parseJSON(localStorage.getItem(clave));
+      var num = parseInt(registro.nota);
+      if (num <= Nmenor) {
+        Nmenor = num;
+        aux = registro.nombre;
+      }
+    }
+    alert("La nota menor es " + Nmenor);
+  });
+  
 });
