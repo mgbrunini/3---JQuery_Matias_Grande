@@ -1,0 +1,13 @@
+body{
+  background: #B2EBF2;
+}
+
+h3{
+  text-align: center;
+  font-family: "fonts/roboto";
+}
+
+button{
+  border-radius: 5px;
+  text-align: center;
+}

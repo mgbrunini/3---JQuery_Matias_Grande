@@ -14,7 +14,7 @@ function editar(codigo){
 function listar(){
   var tabla = "";
   var parrafo = $("#p1");
-  tabla += '<table border="1">';
+  tabla += '<table class="responsive-table">';
   tabla += '<tr>';
   tabla += '<th>CODIGO</th>';
   tabla += '<th>NOMBRE</th>';
